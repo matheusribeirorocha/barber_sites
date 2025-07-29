@@ -94,9 +94,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'barbearia_db',
         'USER': 'root',
-        'PASSWORD': 'senac',
+        'PASSWORD': 'senai@123',
         'HOST': 'localhost',  # Ou o IP do seu servidor MySQL, se não for local
-        'PORT': '3307',      # A porta padrão do MySQL. Mude se for diferente
+        'PORT': '3306',      # A porta padrão do MySQL. Mude se for diferente
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
@@ -104,9 +104,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'barbearia_db_test',  # <--- MUITO IMPORTANTE: UM NOME DIFERENTE PARA O BANCO DE DADOS DE TESTE
         'USER': 'root',
-        'PASSWORD': 'senac',
+        'PASSWORD': 'senai@123',
         'HOST': 'localhost',
-        'PORT': '3307',
+        'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
