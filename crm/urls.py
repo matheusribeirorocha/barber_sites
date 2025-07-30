@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from . import views
+# from crm.views import cadastrar_usuario
 
 
 urlpatterns = [
@@ -14,4 +15,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('plano/', views.plano_form, name='plano_form'),
     path('criar/', views.criar_plano, name='criar_plano'), # URL para processar o formulário
+    path('usuario/', views.visualizar_usuario,name='visualizar_usuario'),
+    path('barbearia/', views.visualizar_barbearia,name='visualizar_barbearia')
 ]
+
