@@ -1,6 +1,23 @@
 # models.py
 from django.db import models
 
+class Genero(models.Model):
+    nome_genero = models.CharField(
+        max_length=100,
+        null = False,
+        blank = False
+    )
+    class Meta:
+        db_table = 'crm_genero' # Nome da tabela no banco de dados
+        verbose_name = "Genero"
+        verbose_name_plural = "Genero"
+        # Você pode adicionar outras opções Meta aqui, se necessário,
+        # como ordering = ['nome_plano'] para ordenar por nome padrão.
+
+    def __str__(self):
+        # Representação textual de um objeto Plano
+        return self.nome_genero
+
 class Plano(models.Model):
     # O 'id' é gerado automaticamente pelo Django como Primary Key (id).
     # Não precisamos declará-lo explicitamente.
